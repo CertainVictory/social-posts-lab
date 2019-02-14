@@ -1,0 +1,15 @@
+<section >
+    <form ng-show="$ctrl.formToggle" class="form-style" ng-submit="$ctrl.onSubmit({thought: $ctrl.post});">
+
+<section class="form-container">
+        <h3>Title</h3>
+        <input class="title-style" expand-on-focus ng-model="$ctrl.post.title" type="text">
+        <h3>Thought</h3>
+        <textarea wrap="hard" expand-on-focus ng-model="$ctrl.post.text"></textarea>
+        <button ng-disabled="!$ctrl.post.title || !$ctrl.post.text" class="btn-width">Add</button>
+</section>
+           
+
+
+    </form>
+</section>

@@ -1,0 +1,20 @@
+
+<section class="work">
+<header>My Thoughts</header>
+
+</section>
+<button ng-disabled="$ctrl.formToggle" ng-click="$ctrl.showForm()">New Thought</button>
+
+<section class="post-con">
+
+                <post-form   form-toggle="$ctrl.formToggle" show-form="$ctrl.showForm()" on-submit="$ctrl.onSubmit(thought)"></post-form>
+
+       
+
+<post class="post-style" post="post" remove-post="$ctrl.removePost($index)" ng-repeat="post in $ctrl.posts track by $index"></post>
+<section>
+
+
+
+</section>
+</section>
